@@ -14,7 +14,7 @@ gulp.task('clean', function (cb) {
 gulp.task('build', ['clean'], function() {
     var tsResult = gulp.src(["typings/index.d.ts", "src/**/*.ts"])
         .pipe(sourcemaps.init())
-        .pipe(tsc(tsProject));
+        .pipe(tsProject());
 
     return tsResult.js
         .pipe(sourcemaps.write('.', {
