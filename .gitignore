@@ -1,0 +1,19 @@
+/.idea
+
+/node_modules
+
+/*.js
+/*.js.map
+/*.d.ts
+
+/lib/*.js
+/lib/*.js.map
+/lib/*.d.ts
+
+# tsd
+typings
+
+logs
+*.log
+
+dist
